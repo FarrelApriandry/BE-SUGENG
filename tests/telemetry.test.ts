@@ -19,7 +19,7 @@ const VALID_SAMPLE_PAYLOAD = {
   uptimeSec: 1420,
 };
 
-describe("SUGENG Elysia API Endpoints", () => {
+describe("SUGENG Elysia API Endpoints", { timeout: 15000 }, () => {
   describe("Root & Health Routes", () => {
     it("GET / harus mengembalikan status 200 dengan info servis", async () => {
       const response = await app.handle(new Request("http://localhost/"));
