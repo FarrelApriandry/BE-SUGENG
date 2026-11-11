@@ -82,7 +82,7 @@ VALUES
     ('NODE-MGL-02', 'TPS Potrobangsan', 'Jl. Pahlawan, Potrobangsan, Magelang Utara', -7.46230, 110.22180, 120.0, 'WARNING', 62.0),
     ('NODE-MGL-03', 'TPS Cacaban', 'Jl. Sigaluh, Cacaban, Magelang Tengah', -7.47640, 110.21410, 120.0, 'SAFE', 28.5),
     ('NODE-MGL-04', 'TPS Tidar Selatan', 'Jl. Sudirman, Tidar Selatan, Magelang Selatan', -7.49500, 110.22500, 120.0, 'CRITICAL', 82.0),
-    ('NODE-MGL-05', 'TPSA Banyuurip (Pusat Pembuangan Akhir)', 'Banyuurip, Tegalrejo, Kab/Kota Magelang', -7.47350, 110.24520, 1000.0, 'SAFE', 45.0)
+    ('NODE-MGL-05', 'TPS Kampus Tuguran UNTIDAR', 'Jl. Kapten Suparman No.39, Tuguran, Magelang Utara', -7.46420, 110.22910, 120.0, 'SAFE', 45.0)
 ON CONFLICT (node_id) DO UPDATE 
 SET 
     name = EXCLUDED.name,

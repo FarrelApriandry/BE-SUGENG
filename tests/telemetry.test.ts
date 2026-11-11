@@ -199,11 +199,11 @@ describe("SUGENG Elysia API Endpoints", () => {
       expect(json.success).toBe(true);
       expect(Array.isArray(json.data)).toBe(true);
 
-      const banyuurip = json.data.find(
+      const tuguran = json.data.find(
         (n: { nodeId: string }) => n.nodeId === "NODE-MGL-05"
       );
-      expect(banyuurip).toBeDefined();
-      expect(banyuurip.name).toContain("Banyuurip");
+      expect(tuguran).toBeDefined();
+      expect(tuguran.name).toContain("UNTIDAR");
     });
 
     it("GET /api/nodes/geojson harus mengembalikan GeoJSON FeatureCollection yang valid untuk Leaflet", async () => {
