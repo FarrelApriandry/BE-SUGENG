@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "trainedAt": "2026-11-16T11:52:42.765Z",
+  "trainingSamplesCount": 800,
+  "testSamplesCount": 200,
+  "metrics": {
+    "accuracy": 1,
+    "macroF1Score": 1,
+    "weightedF1Score": 1,
+    "classMetrics": {
+      "NORMAL": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "support": 119
+      },
+      "ACTIVE_DECOMPOSITION": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "support": 41
+      },
+      "METHANE_HAZARD": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "support": 27
+      },
+      "SENSOR_ANOMALY": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "support": 13
+      }
+    },
+    "confusionMatrix": {
+      "classes": [
+        "NORMAL",
+        "ACTIVE_DECOMPOSITION",
+        "METHANE_HAZARD",
+        "SENSOR_ANOMALY"
+      ],
+      "matrix": [
+        [
+          119,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          41,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          27,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          13
+        ]
+      ],
+      "totalSamples": 200
+    },
+    "sampleEvaluated": 200
+  },
+  "thresholds": {
+    "ammoniaWarning": 60,
+    "methaneWarning": 250,
+    "highTemperature": 32,
+    "highHumidity": 68
+  }
+}
