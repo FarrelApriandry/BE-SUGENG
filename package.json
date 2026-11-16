@@ -3,6 +3,8 @@
   "version": "1.0.50",
   "scripts": {
     "test": "bun test",
+    "test:ai": "bun run src/ai/train.ts",
+    "ai:train": "bun run src/ai/train.ts",
     "dev": "bun run --watch src/index.ts",
     "start": "bun run src/index.ts",
     "typecheck": "tsc --noEmit"

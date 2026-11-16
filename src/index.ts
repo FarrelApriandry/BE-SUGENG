@@ -6,6 +6,7 @@ import { errorHandlerMiddleware } from "./middleware/error";
 import { healthRoutes } from "./routes/health.route";
 import { nodesRoutes } from "./routes/nodes.route";
 import { telemetryRoutes } from "./routes/telemetry.route";
+import { aiRoutes } from "./routes/ai.route";
 
 /**
  * SUGENG API Gateway & Ingestion Middleware
@@ -37,6 +38,7 @@ export const app = new Elysia()
           { name: "Telemetry Ingestion", description: "Endpoint ingestion data sensor dari ESP32" },
           { name: "Dashboard Telemetry", description: "Endpoint telemetri untuk Web Dashboard SIG & Monitoring" },
           { name: "TPS Nodes (GIS)", description: "Endpoint geospasial titik TPS Kota Magelang" },
+          { name: "AI Predictive Intelligence", description: "Prediksi Time-to-Overflow (TTO) & Regresi Diurnal Cerdas" },
           { name: "Health Check", description: "Status kesehatan sistem dan koneksi database" },
         ],
       },
@@ -57,7 +59,8 @@ export const app = new Elysia()
   }))
   .use(healthRoutes)
   .use(telemetryRoutes)
-  .use(nodesRoutes);
+  .use(nodesRoutes)
+  .use(aiRoutes);
 
 // Jalankan listener jika dieksekusi secara langsung via CLI (Bun)
 if (import.meta.main) {
